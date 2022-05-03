@@ -4,10 +4,8 @@ collections:
 #- amathoman.win_security_harden
 
 - name: community.windows
-
 - name: ansible.windows
 
-- name: amathoman.win_security_harden
-  version: 1.0.0
+
 
 

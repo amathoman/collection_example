@@ -1,0 +1,25 @@
+- name: Windows Harden
+  hosts: all
+
+  tasks:
+
+    - name: "Turn Windows Firewall On (Module)"
+      win_firewall:
+        state: enabled
+        profile: Domain
+      ignore_errors: true
+      
+
+    - name: "Turn Windows Firewall On (Collection)"
+      community.windows.win_firewall:
+        state: enabled
+        profile: Domain
+
+    - name: Win Ping
+      win_ping:
+      
+     
+
+
+
+   
