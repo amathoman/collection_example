@@ -1,4 +1,4 @@
-- name: Windows Harden
+- name: Windows Harden (Collection Test)
   hosts: all
 
   tasks:
@@ -7,7 +7,6 @@
       win_firewall:
         state: enabled
         profile: Domain
-      ignore_errors: true
       
 
     - name: "Turn Windows Firewall On (Collection)"
